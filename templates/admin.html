@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PAGE </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container my-3">
+        <h2>feedbakcs</h2>
+ 
+                {% if blog|length == 0 %}
+                   
+                <div class="alert alert-dark" role="alert">
+                    No feedbacks foundI
+                  </div>
+                    {% else %} 
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">SNo</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Massege</th>
+                            <th scope="col">date created</th>
+                          </tr>
+                        </thead>
+                        
+                        <tbody>
+              {% for blog in blog %}
+              <tr>
+                <th scope="row">{{loop.index}}</th>
+                <td>{{blog.name}}</td>
+                <td>{{blog.email}}</td>
+                <td>{{blog.subject}}</td>
+                <td>{{blog.msg}}</td>
+                <td>{{blog.date_created}}</td>
+                <td>
+              
+                
+                </td>
+              </tr>
+              
+              {% endfor %}
+            </tbody>
+            </table>
+              {% endif %}
+               
+           
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+crossorigin="anonymous"></script>
+
+</html>

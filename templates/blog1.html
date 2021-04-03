@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block nav %}
+<li><a href="/"   >Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog" class="active"  >Blog</a></li>
+<li><a href="/contact">Contact</a></li>
+    
+{% endblock nav %}
+
+{% block body %}
+<style>
+    .blog1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .blog {
+        text-align: center;
+    }
+
+    .blog-text {
+        font-size: large
+    }
+
+    #blog-title {
+        font-size: 50px;
+    }
+
+    .section-four {
+        height: 50%;
+    }
+</style>
+
+<div class="blog" id="blog">
+    <img class="blog1" src="{{url_for('static',filename='images/blog1.jpg')}}">
+    <div class="blog-content">
+        <!-- <span class = "badge">Photography</span> -->
+        <span class="misc-info">
+            Published: 1 Week Ago | 25 Comments
+        </span>
+        <h3 id="blog-title" class="blog-title">
+            Learn to hold your camera properly
+        </h3>
+        <p class="blog-text">
+            This may sound obvious, but many new photographers don’t hold their camera correctly, which causes<br>
+            camera shake and blurry images. Tripods are of course the best way to prevent camera shake, but
+            since<br>
+            you won’t be using a tripod unless you’re shooting in low light situations, it’s important to hold
+            your<br>
+            camera properly to avoid unnecessary movement.<br>
+
+            While you’ll eventually develop your own way of holding the camera, you should always hold it with
+            both<br>
+            hands. Grip the right side of the camera with your right hand and place your left hand beneath the
+            lens<br>
+            to support the weight of the camera.<br>
+
+            The closer you keep the camera to your body, the stiller you’ll be able to hold it. If you need
+            extra<br>
+            stability you can lean up against a wall or crouch down on your knees, but if there’s nothing to
+            lean<br>
+            on, adopting a wider stance can also help.<br>
+        </p>
+
+        <a href="/blog/2#blog"> 2nd blog >  </a>
+
+
+
+
+
+
+
+
+
+
+    
+{% endblock body %}

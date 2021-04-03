@@ -1,0 +1,101 @@
+
+{% extends 'base.html' %}
+{% block nav %}
+<li><a href="/"   >Home</a></li>
+<li><a href="/gallery" class="active" >Gallery</a></li>
+<li><a href="/blog"   >Blog</a></li>
+<li><a href="/contact">Contact</a></li>
+    
+{% endblock nav %}
+
+{% block body %}
+<section class = "section-three">
+    <div class = "container">
+        <div class = "gallery">
+            <a href = "{{url_for('static',filename='images/gallery1.jpg')}}">
+                <div class = "single-img">
+                    <img src = "{{url_for('static',filename='images/gallery1.jpg')}}" alt = "gallery image">
+                    <div class = "single-img-content">
+                        <h3>Nature</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href = "{{url_for('static',filename='images/gallery2.jpg')}}">
+                <div class = "single-img">
+                    <img src = "{{url_for('static',filename='images/gallery2.jpg')}}" alt = "gallery image">
+                    <div class = "single-img-content">
+                        <h3>Buildings  </h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href = "{{url_for('static',filename='images/gallery3.jpg')}}">
+                <div class = "single-img">
+                    <img src = "{{url_for('static',filename='images/gallery3.jpg')}}" alt = "gallery image">
+                    <div class = "single-img-content">
+                        <h3>Birds</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href = "{{url_for('static',filename='images/gallery4.jpg')}}">
+                <div class = "single-img">
+                    <img src = "{{url_for('static',filename='images/gallery4.jpg')}}" alt = "gallery image">
+                    <div class = "single-img-content">
+                        <h3>Nature</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href = "{{url_for('static',filename='images/gallery5.jpg')}}">
+                <div class = "single-img">
+                    <img src = "{{url_for('static',filename='images/gallery5.jpg')}}" alt = "gallery image">
+                    <div class = "single-img-content">
+                        <h3>Art Work</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href = "{{url_for('static',filename='images/gallery6.jpg')}}">
+                <div class = "single-img">
+                    <img src = "{{url_for('static',filename='images/gallery6.jpg')}}" alt = "gallery image">
+                    <div class = "single-img-content">
+                        <h3>Sea Skating</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href = "{{url_for('static',filename='images/gallery7.jpg')}}">
+                <div class = "single-img">
+                    <img src = "{{url_for('static',filename='images/gallery7.jpg')}}" alt = "gallery image">
+                    <div class = "single-img-content">
+                        <h3>Nature</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href = "{{url_for('static',filename='images/gallery8.jpg')}}">
+                <div class = "single-img">
+                    <img src = "{{url_for('static',filename='images/gallery8.jpg')}}" alt = "gallery image">
+                    <div class = "single-img-content">
+                        <h3>food   </h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href = "{{url_for('static',filename='images/gallery9.jpg')}}">
+                <div class = "single-img">
+                    <img src = "{{url_for('static',filename='images/gallery9.jpg')}}" alt = "gallery image">
+                    <div class = "single-img-content">
+                        <h3>lake</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+    <script src = "{{url_for('static',filename='simplelightbox-master/dist/simple-lightbox.js')}}"></script>
+
+      
+{% endblock body %}

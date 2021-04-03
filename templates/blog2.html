@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block nav %}
+<li><a href="/"   >Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog" class="active"  >Blog</a></li>
+<li><a href="/contact">Contact</a></li>
+    
+{% endblock nav %}
+
+{% block body %}
+<style>
+    .blog1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .blog {
+        text-align: center;
+    }
+
+    .blog-text {
+        font-size: large
+    }
+
+    #blog-title {
+        font-size: 50px;
+    }
+
+    .section-four {
+        height: 50%;
+    }
+</style>
+    
+<div class="blog" id="blog">
+    <img class="blog1" src="{{url_for('static',filename='images/blo2.jpg')}}">
+    <div class="blog-content">
+        <!-- <span class = "badge">Photography</span> -->
+        <span class="misc-info">
+            Published: 1 Week Ago | 25 Comments
+        </span>
+        <h3 id="blog-title" class="blog-title">
+            Understand the exposure triangle
+        </h3>
+        <p class="blog-text">
+            Although it can seem a bit daunting at first, the exposure triangle simply refers to the three most <br>
+            important elements of exposure; ISO, aperture and shutter speed. When you’re shooting in manual mode,
+            <br>
+
+            you’ll need to be able to balance all three of these things in order to get sharp, well-lit photos. <br>
+            <br> <br>
+            <strong>
+                ISO: </strong>ISO controls the camera’s sensitivity to light. A low ISO setting means the camera
+            will be less <br>
+            sensitive to light, while a higher ISO means it will be more sensitive to light. However, the quality
+            of<br>
+            the image will decrease as the ISO increases and you may see 'noise' on the image with a higher ISO.
+            An<br>
+            ISO setting of 100 to 200 is usually ideal when shooting outdoors during the day, but when shooting
+            in<br>
+            low light situations, such as indoors or at night, a higher ISO of 400 to 800 or higher might be<br>
+            necessary. <br>
+            <br> <br>
+            <strong>Aperture: </strong>
+            Aperture is the opening in your lens and controls how much light gets through to the camera’s sensor as
+            <br> well as the depth of field. Depth of field refers to the area surrounding the focal point of the
+            image <br>
+            which remains sharp. A wider aperture (indicated by a lower f-number) lets more light through, but has a
+            <br>
+            narrow depth of field. While a narrow aperture (indicated by a higher f-number) lets less light through,
+            <br>
+            but has a wider depth of field. A wide aperture is great when you want to isolate your subject, but when
+            <br>
+            you want the whole scene to be in focus, such as with group shots, you’ll need to use a narrow aperture.
+            <br>
+            <br>
+
+            <br> <br> <strong> Shutter speed:</strong>
+            Shutter speed controls how long the shutter stays open when you take a picture. The longer the shutter
+            <br>
+            stays open, the more light gets through to the camera’s sensor. A fast shutter speed is good for <br>
+            freezing action, while a longer shutter speed will blur motion. Long shutter speeds can give interesting
+            <br>
+            effects, but usually require a tripod.
+        </p>
+        <a href="/blog/1#blog"> < 1st blog </a>
+        <!-- <section class="section-four"> -->
+
+        </section>
+
+{% endblock body %}

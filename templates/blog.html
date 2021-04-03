@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+<li><a href="/"   >Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog" class="active"  >Blog</a></li>
+<li><a href="/contact">Contact</a></li>
+    
+{% endblock nav %}
+{% block body %}
+<section id= "blog"class = "section-four">
+    <div class = "container">
+        <div class = "blogs">
+            <div class = "blog-wrapper-lg">
+                <!-- single blog post -->
+                <div class = "blog">
+                    <img src = "{{url_for('static',filename='images/blog1.jpg')}}">
+                    <div class = "blog-content">
+                        <span class = "badge">Photography</span>
+                        <span class = "misc-info">
+                            Published: 1 Week Ago | 25 Comments
+                        </span>
+                        <h3 class = "blog-title">
+                            Learn to hold your camera properly
+                        </h3>
+                        <p class = "blog-text">
+                            This may sound obvious, but many new photographers don’t hold their camera correctly, which causes camera shake and blurry images
+                        </p>
+                        <a href = "/blog/1#blog" class = "btn">Read More</a>
+                    </div>
+                </div>
+                <!-- end of single post -->
+
+                <!-- single blog post -->
+                <div class = "blog">
+                    <img src = "{{url_for('static',filename='images/blo2.jpg')}}">
+                    <div class = "blog-content">
+                        <span class = "badge">Photography</span>
+                        <span class = "misc-info">
+                            Published: 1 Week Ago | 25 Comments
+                        </span>
+                        <h3 class = "blog-title">
+                            Understand the exposure triangle
+                        </h3>
+                        <p class = "blog-text">
+                            Although it can seem a bit daunting at first, the exposure triangle simply refers to the three most important elements of exposure; ISO, aperture and shutter speed. 
+                        </p>
+                        <a href = "/blog/2#blog" class = "btn">Read More</a>
+                    </div>
+                </div>
+                <!-- end of single post -->
+            </div>
+ 
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+{% endblock body %}

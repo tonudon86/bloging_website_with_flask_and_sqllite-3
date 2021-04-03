@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block nav %}
+<li><a href="/" class="active"  >Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li><a href="/blog"   >Blog</a></li>
+<li><a href="/contact">Contact</a></li>
+    
+{% endblock nav %}
+    {% block body %}
+    <section class="section-one">
+        <div class="container">
+            <div class="sec-one-left">
+                <!-- image here -->
+                <!-- <div>
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit ut aliquid ab illo.
+                        Repellat nam molestias repellendus perspiciatis blanditiis.</p>
+                    <a href="#" class="btn">view all</a>
+                </div> -->
+            </div>
+
+            <div class="sec-one-right">
+                <div class="work-content">
+                    <h3>ESSENTIAL PHOTOGRAPHY TIPS FOR BEGINNERS</h3>
+                    <p>Whether you’ve just purchased your first DSLR and want to learn the basics or are looking for simple ways to update your existing photography skills, the following tips should help you build a strong foundation. Keep in mind, however, that photography is an art you’ll never really be ‘done’ learning.
+
+                        The best way to keep improving is to practice often, make mistakes and be open to learning from others, whether they’re well-established photographers or newcomers to the craft.   .</p>
+                    <a href="/blog#blog" class="btn">view all</a>
+                </div>
+                <div class="work-imgs">
+                    <div class="work-img-1">
+                        <!--image here-->
+                    </div>
+                    <div class="work-img-2">
+                        <!-- image here -->
+                    </div>
+                </div>
+                <h3>"Taking an image, freezing a moment, reveals how rich reality truly is."</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-two">
+        <div class="container">
+            <h2>FOLLOW ON INSTAGRAM</h2>
+            <span>@suryasen_vishwakarma</span>
+            <div class="insta-imgs">
+                <div>
+                    <img src="{{url_for('static',filename='images/insta-1.jpg')}}">
+                    <div class="icon-overlay flex">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="{{url_for('static',filename='images/insta-2.jpg')}}">
+                    <div class="icon-overlay flex">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="{{url_for('static',filename='images/insta-3.jpg')}}">
+                    <div class="icon-overlay flex">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="{{url_for('static',filename='images/insta-4.jpg')}}">
+                    <div class="icon-overlay flex">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+       
+    {% endblock body %}
